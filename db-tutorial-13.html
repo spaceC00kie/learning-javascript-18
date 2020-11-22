@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var tomSmith = ["Tom Smith", "314 Pi Road", 46089.67];
+      document.write("1st Index ", tomSmith[0], "<br />");
+      tomSmith[3] = "tSmith@gmail.com";
+      tomSmith.splice(2, 1, "Atlanta", "GA");
+      tomSmith.splice(4, 1);
+
+      var numbers = [4, 3, 9, 1, 20, 43];
+      var combinedArray = numbers.concat(tomSmith);
+      tomSmith.pop(); //removes last item
+      tomSmith.push("555-1212", "US"); //add items to the end
+      tomSmith.shift(); //delete first item
+      tomSmith.unshift("Thomas Smith"); //add items to the first index
+
+      for (i = 0; i < tomSmith.length; i++) {
+        document.write(tomSmith[i], "<br />");
+      }
+
+      //for (assign a value to var; while this is true; do this){...}
+
+      i = 0
+      while (i < tomSmith.length){
+          i++
+      }
+
+      tomSmith.forEach(taco => document.write(taco))
+      //nameOfArray.forEach(thingInArray => {
+      //    do something with var thingInArray
+      //    do other thing ie: call db print something
+      //  })
+
+      //shorthand can be wihtout {}
+      // tacos.forEach(taco => taco.eat())
+
+      //db = database
+
+    </script>
+  </body>
+</html>
